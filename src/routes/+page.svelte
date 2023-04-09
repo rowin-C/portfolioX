@@ -189,7 +189,7 @@
       <Hacked />
       <!-- <Test /> -->
       <button class="move-now"
-        ><a href="src\routes\about\resume.pdf" download>Resume</a></button
+        ><a href="/about/resume.pdf" download>Resume</a></button
       >
     </div>
   </section>
