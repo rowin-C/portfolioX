@@ -55,6 +55,10 @@
   onMount(() => (loaded = true));
 </script>
 
+<svelte:head>
+  <title>Hello hello hello</title>
+</svelte:head>
+
 <Navbar />
 
 <Cursor />
