@@ -51,6 +51,15 @@
     };
   }
 
+  function onMouseHover() {
+    // @ts-ignore
+    document.querySelector("#cursor").style.scale = 4;
+  }
+  function onMouseHover1() {
+    // @ts-ignore
+    document.querySelector("#cursor").style.scale = 1;
+  }
+
   onMount(() => (loaded = true));
 </script>
 
@@ -188,8 +197,10 @@
       <div class="back" />
       <Hacked />
       <!-- <Test /> -->
-      <button class="move-now"
-        ><a href="/about/resume.pdf" download>Resume</a></button
+      <button
+        on:mouseenter={onMouseHover}
+        on:mouseleave={onMouseHover1}
+        class="move-now"><a href="/about/resume.pdf" download>Resume</a></button
       >
     </div>
   </section>
@@ -207,7 +218,7 @@
           about the panels as well as help<br /> in making the right decision
           for the optimum<br /> energy saving
         </p>
-        <button
+        <button on:mouseenter={onMouseHover} on:mouseleave={onMouseHover1}
           ><a
             href="https://www.figma.com/file/NKwAWuBX9DiY7feUwT0QBt/Untitled?t=hHCcb0YGYiSUcvBV-0"
             target="_blank"
@@ -230,7 +241,7 @@
           Fully built using JavaScrpit's time functions<br /> (no use of external
           API)
         </p>
-        <button
+        <button on:mouseenter={onMouseHover} on:mouseleave={onMouseHover1}
           ><a href="https://clock-ronwinner.vercel.app/" target="_blank"
             >View Site
           </a></button
@@ -244,7 +255,7 @@
         <p>
           Windows app to turn off/ Kill another app<br /> after the time limit
         </p>
-        <button
+        <button on:mouseenter={onMouseHover} on:mouseleave={onMouseHover1}
           ><a
             href="https://github.com/rowin-C/program_close_timer"
             target="_blank"
