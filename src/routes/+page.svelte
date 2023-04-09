@@ -1,13 +1,12 @@
 <script lang="ts">
-  import Cursor from "$lib/Cursor.svelte";
-  import "../app.css";
   import { browser } from "$app/environment";
+  import Cursor from "$lib/Cursor.svelte";
+  import Hacked from "$lib/hacked.svelte";
+  import Navbar from "$lib/navbar.svelte";
   import { onMount } from "svelte";
   import { expoOut } from "svelte/easing";
-  import { get } from "svelte/store";
   import type { TransitionConfig } from "svelte/transition";
-  import Navbar from "$lib/navbar.svelte";
-  import Hacked from "$lib/hacked.svelte";
+  import "../app.css";
 
   let loaded = false;
 
