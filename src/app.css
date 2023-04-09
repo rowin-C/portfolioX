@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+body {
+  background: rgb(20, 20, 20);
+  margin: 0;
+  padding: 0;
+}
+
+body:hover {
+  cursor: none;
+}
