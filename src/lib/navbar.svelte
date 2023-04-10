@@ -30,11 +30,20 @@
     document.querySelector(".square2").style.transform =
       "scale(1) translate(0, 0) ";
   }
+
+  function onMouseHover() {
+    // @ts-ignore
+    document.querySelector("#cursor").style.scale = 5;
+  }
+  function onMouseHover1() {
+    // @ts-ignore
+    document.querySelector("#cursor").style.scale = 1;
+  }
 </script>
 
 <div class="header">
   <div class="text"><span>SAUBHAGYA</span></div>
-  <div class="menu">
+  <div on:mouseenter={onMouseHover} on:mouseleave={onMouseHover1} class="menu">
     <div
       on:mouseenter={menuHover1}
       on:mouseleave={menuHover2}
