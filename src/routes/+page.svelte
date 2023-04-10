@@ -55,6 +55,7 @@
     // @ts-ignore
     document.querySelector("#cursor").style.scale = 4;
   }
+
   function onMouseHover1() {
     // @ts-ignore
     document.querySelector("#cursor").style.scale = 1;
@@ -270,25 +271,42 @@
 
 <footer>
   <div class="stack">
-    <a href="https://www.instagram.com/saubhagya.prasad/" target="_blank"
-      ><img class="logo" src="/iglogo.png" alt="" /></a
-    >
-    <a href="https://github.com/rowin-C" target="_blank"
-      ><img class="logo" src="/gitlogo.png" alt="" /></a
+    <a
+      on:mouseenter={onMouseHover}
+      on:mouseleave={onMouseHover1}
+      href="https://www.instagram.com/saubhagya.prasad/"
+      target="_blank"><img class="logo" src="/iglogo.png" alt="" /></a
     >
     <a
+      on:mouseenter={onMouseHover}
+      on:mouseleave={onMouseHover1}
+      href="https://github.com/rowin-C"
+      target="_blank"><img class="logo" src="/gitlogo.png" alt="" /></a
+    >
+    <a
+      on:mouseenter={onMouseHover}
+      on:mouseleave={onMouseHover1}
       href="https://www.linkedin.com/in/saubhagya-prasad-8bb40724a/"
       target="_blank"><img class="logo smol" src="/linklogo.png" alt="" /></a
     >
   </div>
   <div class="made-text">
-    <span>Made with ❤️</span>
+    <span
+      >Made with <a
+        on:mouseenter={onMouseHover}
+        on:mouseleave={onMouseHover1}
+        href="">❤️</a
+      >
+    </span>
     <span>by saubhagya</span>
   </div>
   <div class="blanck" />
 </footer>
 
 <style>
+  .made-text a {
+    text-decoration: none;
+  }
   .move-now {
     margin-left: 11rem;
   }
