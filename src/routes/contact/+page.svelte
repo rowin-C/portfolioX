@@ -35,7 +35,7 @@
     </h2>
     <h3>Just wanna Chat ?</h3>
     <p>That's cool lets talk on telegram without sharing our info.</p>
-    <button
+    <button on:mouseenter={onMouseHover} on:mouseleave={onMouseHover1}
       ><a href="https://t.me/ronwinner" target="_blank">Telegram</a></button
     >
   </div>
