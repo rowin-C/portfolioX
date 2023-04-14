@@ -227,10 +227,12 @@
           </a></button
         >
       </div>
-      <div class="image"><img class="image" src="/urgent.png" alt="" /></div>
+      <div class="zoom">
+        <img class="image" src="/urgent.png" alt="" />
+      </div>
     </div>
     <div class="project">
-      <div class="imageH"><img class="imageH" src="/clock.png" alt="" /></div>
+      <div class="zoom"><img class="imageH" src="/clock.png" alt="" /></div>
       <div class="conetent-text">
         <span>JavaScript Clock app</span>
         <p>Clock app with multiple location access</p>
@@ -264,7 +266,7 @@
           </a></button
         >
       </div>
-      <div class="imageH"><img class="imageH" src="/github.png" alt="" /></div>
+      <div class="zoom"><img class="imageH" src="/github.png" alt="" /></div>
     </div>
   </div>
 </section>
@@ -350,6 +352,7 @@
   .imageH {
     height: 20rem;
     width: 30rem;
+
     scale: 1.1;
   }
   .image {

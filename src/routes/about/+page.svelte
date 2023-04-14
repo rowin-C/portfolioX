@@ -4,7 +4,7 @@
 
   function smoothScroll(node: HTMLElement) {
     Scrollbar.init(node, {
-      damping: 0.05,
+      damping: 0.03,
       alwaysShowTracks: true,
       continuousScrolling: true,
     });

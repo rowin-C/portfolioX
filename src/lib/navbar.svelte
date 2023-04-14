@@ -42,14 +42,23 @@
 </script>
 
 <div class="header">
-  <div class="text"><span>SAUBHAGYA</span></div>
-  <div on:mouseenter={onMouseHover} on:mouseleave={onMouseHover1} class="menu">
+  <div class="text">
+    <span on:mouseenter={onMouseHover} on:mouseleave={onMouseHover1}
+      >SAUBHAGYA</span
+    >
+  </div>
+  <div class="menu">
     <div
       on:mouseenter={menuHover1}
       on:mouseleave={menuHover2}
       class="text-menu"
     >
-      <a class="text" href="/menu">
+      <a
+        on:mouseenter={onMouseHover}
+        on:mouseleave={onMouseHover1}
+        class="text"
+        href="/menu"
+      >
         {#if $page.url.pathname === "/menu"}
           Back
         {:else}
@@ -58,7 +67,7 @@
       </a>
     </div>
 
-    <a href="/menu">
+    <a on:mouseenter={onMouseHover} on:mouseleave={onMouseHover1} href="/menu">
       <div class="square">
         <div
           on:mouseenter={menuHover1}
