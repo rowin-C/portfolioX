@@ -12,4 +12,4 @@ It's my sceond attempt for making a portfolio website hopefully its better than 
  ## Pending
  * Blog section
  * adding scroll animation
- * adding smooth scroll
+
