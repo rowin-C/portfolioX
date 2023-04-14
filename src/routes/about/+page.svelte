@@ -1,11 +1,25 @@
 <script lang="ts">
   import Back from "$lib/back.svelte";
   import Scrollbar from "smooth-scrollbar";
-  //@ts-ignore
-  //   Scrollbar.init(document.querySelector(".container"), options);
+
+  function smoothScroll(node: HTMLElement) {
+    Scrollbar.init(node, {
+      damping: 0.05,
+      alwaysShowTracks: true,
+      continuousScrolling: true,
+    });
+
+    return {
+      destroy() {
+        Scrollbar.destroy(node);
+      },
+    };
+  }
 </script>
 
-<div id="scroll" class="container">
+<svelte:body use:smoothScroll />
+
+<div class="container">
   <Back />
   <div class="bg">
     <img src="/pp.jpg" alt="" />
@@ -94,28 +108,5 @@
       opacity: 1;
       transform: translateY(0);
     }
-  }
-
-  button {
-    font-size: 1.2rem;
-    font-family: "rubik", sans-serif;
-    font-weight: 500;
-    background-color: rgb(20, 20, 20);
-    height: 3rem;
-    width: 10rem;
-    border: solid 3px #5c060d;
-    border-radius: 10px;
-    box-shadow: 0px 0px 2px rgb(0, 0, 0);
-    transition: all 300ms cubic-bezier(0.62, 0.42, 0, 1.03);
-    margin-left: 3.5rem;
-  }
-  button a {
-    color: white;
-    text-decoration: none;
-  }
-
-  button:hover {
-    transform: translateY(-5px);
-    background-color: #ce1b26;
   }
 </style>
