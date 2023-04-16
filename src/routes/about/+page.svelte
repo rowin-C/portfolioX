@@ -1,23 +1,6 @@
 <script lang="ts">
   import Back from "$lib/back.svelte";
-  import Scrollbar from "smooth-scrollbar";
-
-  function smoothScroll(node: HTMLElement) {
-    Scrollbar.init(node, {
-      damping: 0.03,
-      alwaysShowTracks: true,
-      continuousScrolling: true,
-    });
-
-    return {
-      destroy() {
-        Scrollbar.destroy(node);
-      },
-    };
-  }
 </script>
-
-<svelte:body use:smoothScroll />
 
 <div class="container">
   <Back />
