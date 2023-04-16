@@ -64,7 +64,9 @@
         on:mouseleave={onMouseHover1}
         on:mouseenter={hoverIn}
         on:mouseleave={hoverOut}
-        href="/blog"
+        rel="noreferrer"
+        target="_blank"
+        href="https://blog-react-teal.vercel.app/"
         class="menu-item">Blog</a
       >
       <a
