@@ -1,4 +1,7 @@
-<script>
+<script lang>
+  import { inview } from "svelte-inview";
+  import { blur, slide } from "svelte/transition";
+
   let words = [
     "FRONTEND DEVELOPER",
     "SOFTWARE DEVELOPER",
@@ -36,11 +39,26 @@
     i++;
     itretion = 0;
   }
+
+  let visible = false;
 </script>
 
-<h1 id="hacked" on:mouseenter={changeWords} data-value={word}>
-  FRONTEND DEVELOPER
-</h1>
+{#if visible}
+  <h1
+    transition:slide={{ axis: "y", duration: 5000 }}
+    id="hacked"
+    on:mouseenter={changeWords}
+    data-value={word}
+  >
+    FRONTEND DEVELOPER
+  </h1>
+{/if}
+
+<div
+  style="height: 2px"
+  use:inview={{ threshold: 0.1, unobserveOnEnter: true }}
+  on:inview_change={(e) => (visible = e.detail.inView)}
+/>
 
 <!-- <div class="hoverme">
   <svg
