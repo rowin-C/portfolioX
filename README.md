@@ -10,6 +10,5 @@ It's my sceond attempt for making a portfolio website hopefully its better than 
  * hosted on vercel
  
  ## Pending
- * Blog section
  * adding scroll animation
 
