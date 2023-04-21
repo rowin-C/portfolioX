@@ -39,26 +39,12 @@
     i++;
     itretion = 0;
   }
-
-  let visible = false;
 </script>
 
-{#if visible}
-  <h1
-    transition:slide={{ axis: "y", duration: 5000 }}
-    id="hacked"
-    on:mouseenter={changeWords}
-    data-value={word}
-  >
-    FRONTEND DEVELOPER
-  </h1>
-{/if}
-
-<div
-  style="height: 2px"
-  use:inview={{ threshold: 0.1, unobserveOnEnter: true }}
-  on:inview_change={(e) => (visible = e.detail.inView)}
-/>
+<h1 id="hacked" on:mouseenter={changeWords} data-value={word}>
+  FRONTEND DEVELOPER
+</h1>
+<h2>↖ hover me</h2>
 
 <!-- <div class="hoverme">
   <svg
@@ -140,6 +126,14 @@
     font-family: "Space Grotesk", sans-serif;
     color: #cecece;
     font-size: 6.5vw;
+  }
+
+  h2 {
+    font-size: 5rem;
+    color: #2c2c2c;
+    margin-left: 88rem;
+    margin-top: -5rem;
+    font-family: "Space Grotesk", sans-serif;
   }
 
   #hacked {

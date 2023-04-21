@@ -232,6 +232,38 @@
       </div>
     </div>
     <div class="project">
+      <div class="zoom"><img class="imageH" src="/blog.png" alt="" /></div>
+      <div class="conetent-text">
+        <span>React NextJs Blog</span>
+        <p>Blog Page with multiple page Routing</p>
+        <p>Modern UI design with react components</p>
+        <p>Comment section written in express and<br /> stored in MongoDB</p>
+        <button on:mouseenter={onMouseHover} on:mouseleave={onMouseHover1}
+          ><a href="https://react-next-blog-main.vercel.app/" target="_blank"
+            >View Site
+          </a></button
+        >
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="content-text">
+        <span>Apps/Bots</span>
+        <p>Telegram bot to turn off computer from phone</p>
+        <p>
+          Windows app to turn off/ Kill another app<br /> after the time limit
+        </p>
+        <button on:mouseenter={onMouseHover} on:mouseleave={onMouseHover1}
+          ><a
+            href="https://github.com/rowin-C/program_close_timer"
+            target="_blank"
+            >View in Github
+          </a></button
+        >
+      </div>
+      <div class="zoom"><img class="imageH" src="/github.png" alt="" /></div>
+    </div>
+    <div class="project">
       <div class="zoom"><img class="imageH" src="/clock.png" alt="" /></div>
       <div class="conetent-text">
         <span>JavaScript Clock app</span>
@@ -250,23 +282,6 @@
           </a></button
         >
       </div>
-    </div>
-    <div class="project">
-      <div class="content-text">
-        <span>Apps/Bots</span>
-        <p>Telegram bot to turn off computer from phone</p>
-        <p>
-          Windows app to turn off/ Kill another app<br /> after the time limit
-        </p>
-        <button on:mouseenter={onMouseHover} on:mouseleave={onMouseHover1}
-          ><a
-            href="https://github.com/rowin-C/program_close_timer"
-            target="_blank"
-            >View in Github
-          </a></button
-        >
-      </div>
-      <div class="zoom"><img class="imageH" src="/github.png" alt="" /></div>
     </div>
   </div>
 </section>
