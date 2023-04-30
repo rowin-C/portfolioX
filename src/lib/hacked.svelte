@@ -131,7 +131,7 @@
   h2 {
     font-size: 5rem;
     color: #2c2c2c;
-    margin-left: 88rem;
+    margin-left: 50rem;
     margin-top: -5rem;
     font-family: "Space Grotesk", sans-serif;
   }
