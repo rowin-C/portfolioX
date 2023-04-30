@@ -232,6 +232,23 @@
       </div>
     </div>
     <div class="project">
+      <div class="content-text">
+        <span>Personalized AI Chat-bot </span>
+        <p>
+          Custom data embedding into supabase through<br /> OpenAi’s ada model
+        </p>
+        <p>Interface on React and Material UI library</p>
+        <button on:mouseenter={onMouseHover} on:mouseleave={onMouseHover1}
+          ><a
+            href="https://open-ai-react-mui-personal-chat-assistant-rowinc.vercel.app/"
+            target="_blank"
+            >View in Project
+          </a></button
+        >
+      </div>
+      <div class="zoom"><img class="imageH" src="/chatbot.png" alt="" /></div>
+    </div>
+    <div class="project">
       <div class="zoom"><img class="imageH" src="/blog.png" alt="" /></div>
       <div class="conetent-text">
         <span>React NextJs Blog</span>
