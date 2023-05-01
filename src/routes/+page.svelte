@@ -256,7 +256,7 @@
         <p>Modern UI design with react components</p>
         <p>Comment section written in express and<br /> stored in MongoDB</p>
         <button on:mouseenter={onMouseHover} on:mouseleave={onMouseHover1}
-          ><a href="https://react-next-blog-main.vercel.app/" target="_blank"
+          ><a href="https://blog-rowinc.vercel.app/" target="_blank"
             >View Site
           </a></button
         >
