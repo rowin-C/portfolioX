@@ -66,7 +66,7 @@
         on:mouseleave={hoverOut}
         rel="noreferrer"
         target="_blank"
-        href="https://react-next-blog-main.vercel.app/"
+        href="https://blog-rowinc.vercel.app/"
         class="menu-item">Blog</a
       >
       <a
