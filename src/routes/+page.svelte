@@ -209,8 +209,39 @@
 
 <section class="projects">
   <h1>PROJECTS</h1>
+  <h1
+    on:click={() => (window.location.href = "https://github.com/rowin-C")}
+    on:mouseenter={onMouseHover}
+    on:mouseleave={onMouseHover1}
+    style="margin-top: -20px; display: flex; flex-direction: column; align-items: center;"
+  >
+    <span style="font-size: 20px;"
+      >All my latest projects are updated in github ↗</span
+    >
+  </h1>
+
   <div class="proC">
     <div class="project">
+      <div style="width: 30%;" class="content-text">
+        <span>e-Patra</span>
+        <p>
+          A secure email service that protect your communications from prying
+          eyes. With features like End-to-end encryption,Unlimited storage,
+          Premium free of cost and Compatibility with PGP
+        </p>
+
+        <button on:mouseenter={onMouseHover} on:mouseleave={onMouseHover1}
+          ><a href="https://e-patra.com" target="_blank"
+            >Check it out
+          </a></button
+        >
+      </div>
+      <div class="zoom"><img class="imageH" src="/e_patra.png" alt="" /></div>
+    </div>
+    <div class="project">
+      <div class="zoom">
+        <img class="image" src="/urgent.png" alt="" />
+      </div>
       <div class="conetent-text">
         <span>UI Design</span>
         <p>App for the management of solar panel at home</p>
@@ -227,9 +258,6 @@
           </a></button
         >
       </div>
-      <div class="zoom">
-        <img class="image" src="/urgent.png" alt="" />
-      </div>
     </div>
     <div class="project">
       <div class="content-text">
@@ -242,7 +270,7 @@
           ><a
             href="https://open-ai-react-mui-personal-chat-assistant-rowinc.vercel.app/"
             target="_blank"
-            >View in Project
+            >Check it out
           </a></button
         >
       </div>
@@ -254,7 +282,7 @@
         <span>React NextJs Blog</span>
         <p>Blog Page with multiple page Routing</p>
         <p>Modern UI design with react components</p>
-        <p>Comment section written in express and<br /> stored in MongoDB</p>
+
         <button on:mouseenter={onMouseHover} on:mouseleave={onMouseHover1}
           ><a href="https://blog-rowinc.vercel.app/" target="_blank"
             >View Site
@@ -264,41 +292,19 @@
     </div>
 
     <div class="project">
-      <div class="content-text">
-        <span>Apps/Bots</span>
-        <p>Telegram bot to turn off computer from phone</p>
+      <div style="width: 30%;" class="content-text">
+        <span>Up Up </span>
         <p>
-          Windows app to turn off/ Kill another app<br /> after the time limit
+          Its a endless runner game coded in C# in which character is my friend
         </p>
+
         <button on:mouseenter={onMouseHover} on:mouseleave={onMouseHover1}
-          ><a
-            href="https://github.com/rowin-C/program_close_timer"
-            target="_blank"
+          ><a href="https://github.com/rowin-C/Up_Up" target="_blank"
             >View in Github
           </a></button
         >
       </div>
-      <div class="zoom"><img class="imageH" src="/github.png" alt="" /></div>
-    </div>
-    <div class="project">
-      <div class="zoom"><img class="imageH" src="/clock.png" alt="" /></div>
-      <div class="conetent-text">
-        <span>JavaScript Clock app</span>
-        <p>Clock app with multiple location access</p>
-        <p>
-          Seamless Transition of Background images<br /> (by using smart pre-loading
-          technique)
-        </p>
-        <p>
-          Fully built using JavaScrpit's time functions<br /> (no use of external
-          API)
-        </p>
-        <button on:mouseenter={onMouseHover} on:mouseleave={onMouseHover1}
-          ><a href="https://clock-ronwinner.vercel.app/" target="_blank"
-            >View Site
-          </a></button
-        >
-      </div>
+      <div class="zoom"><img class="imageH" src="/upup.png" alt="" /></div>
     </div>
   </div>
 </section>

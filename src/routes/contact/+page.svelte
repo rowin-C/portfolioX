@@ -29,12 +29,12 @@
       to<br /> say hi, that's cool too.
     </p>
     <h2 on:mouseenter={onMouseHover} on:mouseleave={onMouseHover1}>
-      👋<a href="mailto:cs20b1086@iiitdm.ac.in" target="_blank">
-        cs20b1086@iiitdm.ac.in</a
+      👋<a href="mailto:work.sprasad7@gmail.com" target="_blank">
+        work.sprasad7@gmail.com</a
       >
     </h2>
     <h3>Just wanna Chat ?</h3>
-    <p>That's cool lets talk on telegram without sharing our info.</p>
+    <p>That's cool lets talk on telegram</p>
     <button on:mouseenter={onMouseHover} on:mouseleave={onMouseHover1}
       ><a href="https://t.me/ronwinner" target="_blank">Telegram</a></button
     >
